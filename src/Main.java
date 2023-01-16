@@ -1,14 +1,16 @@
 import java.util.Scanner;
+import java.util.UUID;
 
 public class  Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter NAME , PASSWORD and BALANCE");
+        System.out.println("Enter NAME , Initial Balance and Password");
         System.out.println("These are required to create an account");
 
         String name = sc.next();
-        String password = sc.next();
         double balance = sc.nextDouble();
+        String password = sc.next();
+        System.out.println("The account number of this new SBI user is : " + String.valueOf(UUID.randomUUID()));
 
 //        now creating an object for SBIUser
 
